@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script >
+    $(document).ready(function(){
+    $(".loading").click(function(){
+    $(this).fadeOut(1400);
+     $("#logo").parent().fadeOut(400);
+      });
+      });
+  
+  </script>
+  <title>webpack starterkit</title>
+</head>
+<body>
+ <!-- <div class="loading">
+    <div>
+      <div id="logo"> <img src="<%= require('imgs/imovies-logo.svg') %>"/></div>
+    </div>
+  </div>-->
+  <header>
+    <div class="header-left">
+      <img src="<%= require('imgs/ou.svg') %>">
+      <a href='https://imovies.cc' target="_blank" class="logo"><img width="109" src="<%= require('imgs/imovies-logo.svg') %>" ></a>
+   </div>
+    <div class="header-middle search-area">
+      <input type="search" name="search" placeholder="ძიება">
+      <button type="submit">
+        <img src="<%= require('imgs/Vector.svg') %>">
+      </button>
+    </div>
+    <div class="header-right">
+      <div class="moon-icon">
+        <img src="<%= require('imgs/moon.svg') %>">
+      </div>
+      <div class="other-icon">
+        <img src="<%= require('imgs/image.svg') %>">
+        <img src="<%= require('imgs/Mask Group.jpg') %>">
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/im.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            1
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> უკანასკნელი სამეფო</div>
+          <h4>last kingdom</h4>
+        </div>
+    </div>
+     <div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/imm.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            2
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> სკუბი დუ</div>
+          <h4>scooby doo</h4>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/immm.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            3
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> თორი</div>
+          <h4>thor</h4>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/image.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            4
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> ტერმინალი</div>
+          <h4>terminal</h4>
+        </div>
+      </div><div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/image.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            4
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> ტერმინალი</div>
+          <h4>terminal</h4>
+        </div>
+      </div><div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/image.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            4
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> ტერმინალი</div>
+          <h4>terminal</h4>
+        </div>
+      </div><div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/image.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            4
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> ტერმინალი</div>
+          <h4>terminal</h4>
+        </div>
+      </div><div class="col-md-3">
+        <div class="image">
+          <div class="geo-lang">
+          ქარ
+          </div>
+          <img src="<%= require('imgs/image.png') %>"/>
+          <div class="rate">
+            <div class="imdb rating-container">
+              <img src="<%= require('imgs/imdb.svg') %>"/> 
+               <span class="rating-score">8.2</span>
+               <div class="rating-count"> (234423) </div>
+            </div>
+           
+            <div class="star rating-container">
+             <img src="<%= require('imgs/Union.svg') %>"/> 
+               <span class="rating-score">4.2</span>
+                <div class="rating-count"> (578) </div>
+             </div>
+          </div>
+          <div class="number">
+            4
+          </div>
+        </div>
+        <div class="title">
+          <div class="film-name-ka"> ტერმინალი</div>
+          <h4>terminal</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-3">
+        <div class="black-div">
+          
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="episode-description">
+              <div class="film-image-small">
+                <img src="<%= require('imgs/image 2.png') %>"/> 
+                <div class="icon-heart"> <img src="<%= require('imgs/heart.svg') %>"/> </div>
+              </div>
+              <div class="episode-description-name">
+                <div class="episode-name">
+                  სამეფო კარის თამაშები
+                </div>
+                <div class="episode-name-en">westworld(2019)</div>
+                <div class="episode-number">s09 e10</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="episode-description">
+              <div class="film-image-small">
+                <img src="<%= require('imgs/image 2.png') %>"/> 
+                <div class="icon-heart"> <img src="<%= require('imgs/heart.svg') %>"/> </div>
+              </div>
+             <div class="episode-description-name">
+                <div class="episode-name">
+                  სამეფო კარის თამაშები
+                </div>
+                <div class="episode-name-en">westworld(2019)</div>
+                <div class="episode-number">s09 e10</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="episode-description">
+              <div class="film-image-small">
+                <img src="<%= require('imgs/image 2.png') %>"/> 
+                <div class="icon-heart"> <img src="<%= require('imgs/heart.svg') %>"/> </div>
+              </div>
+              <div class="episode-description-name">
+                <div class="episode-name">
+                  სამეფო კარის თამაშები
+                </div>
+                <div class="episode-name-en">westworld(2019)</div>
+                <div class="episode-number">s09 e10</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
